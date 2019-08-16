@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <title>KENICHI SHINAGAWA'S PORTFOLIO</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Marcellus&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -17,6 +13,22 @@
 <body>
   <div class="bg-cover">
   <div id="particles-js" class="particles"></div>
+
+  <nav class="global-nav">
+    <ul class="global-nav__list" id="nav-list">
+      <li class="global-nav__item"><a href="#">HOME</a></li>
+      <li class="global-nav__item"><a href="#about">ABOUT</a></li>
+      <li class="global-nav__item"><a href="#works">WORKS</a></li>
+      <li class="global-nav__item"><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger" id="js-hamburger">
+    <span class="hamburger__line hamburger__line--1"></span>
+    <span class="hamburger__line hamburger__line--2"></span>
+    <span class="hamburger__line hamburger__line--3"></span>
+  </div>
+  <div class="black-bg" id="js-black-bg"></div>
+
   <header class="header">
     <p class="site-title-sub">Web designer & developer</p>
     <h1 class="site-title">Hi, my name is<br>KENICHI SHINAGAWA</h1>
@@ -36,7 +48,7 @@
       I also make IoT products using Raspberry Pi, Arduino, etc.
     </p>
   </section>
-  <section class="works">
+  <section class="works" id="works">
     <h2 class="heading">WORKS</h2>
     <div class="works-wrapper">
       <div class="work-box tree">
@@ -130,7 +142,7 @@
     <form class="contact-form">
       <input type="text" name="name" placeholder="NAME">
       <textarea name="message" placeholder="MESSAGE"></textarea>
-      <input type="submit" value="SEND">
+      <input type="submit" value="SEND" class="button button-showy">
     </form>
   </section>
   <footer class="footer">
